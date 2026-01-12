@@ -119,8 +119,7 @@ get_header(); ?>
                     </a>
                 </div>
                 <p class="note mb-0 fs-14"><a href="<?php echo $redirect_url; ?>/reviews/">Read our reviews</a> to see
-                    what clients
-                    say about working with us.</p>
+                    what clients say about working with us.</p>
             </div>
         </div>
     </div>

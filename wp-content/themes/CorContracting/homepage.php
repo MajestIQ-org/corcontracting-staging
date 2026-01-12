@@ -1,10 +1,5 @@
 <?php /*Template Name: Homepage */
 get_header(); ?>
-<section class="d-none">
-    <div class="container-fluid">
-        <div class="wrapper"></div>
-    </div>
-</section>
 <section class="banner">
     <div class="container-fluid">
         <div class="wrapper">
@@ -62,7 +57,6 @@ get_header(); ?>
             fill="#fff"></path>
     </svg>
 </section>
-
 <section class="our-services">
     <div class="container-fluid">
         <div class="wrapper">
@@ -117,14 +111,12 @@ get_header(); ?>
                         </a>
 
                     <?php endwhile; ?>
-
                 </div>
             <?php endif; ?>
             <a href="<?php echo $redirect_url; ?>/services/" class="bg-cta h-56 fs-14">View All Services</a>
         </div>
     </div>
 </section>
-
 <section class="why-choose-us">
     <div class="container-fluid">
         <div class="wrapper">
@@ -149,9 +141,7 @@ get_header(); ?>
                         $why_svg = get_sub_field('why_choose_us_card_svg');
                         $why_heading = get_sub_field('why_choose_us_card_heading');
                         $why_excerpt = get_sub_field('why_choose_us_card_excerpt');
-
                         ?>
-
                         <div class="why-card">
                             <?php if ($why_svg): ?>
                                 <div class="icon mb-20">
@@ -173,7 +163,6 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
 <section class="gallery">
     <div class="container-fluid">
         <div class="wrapper">
@@ -192,15 +181,12 @@ get_header(); ?>
             </div>
             <?php if (have_rows('gallery_card')): ?>
                 <div class="d-grid mb-48">
-
                     <?php while (have_rows('gallery_card')):
                         the_row();
                         $gallery_heading = get_sub_field('gallery_card_heading');
                         $gallery_excerpt = get_sub_field('gallery_card_excerpt');
                         $gallery_bg = get_sub_field('gallery_image'); // image field
-                
                         ?>
-
                         <a class="gallery-card" href="<?php echo $redirect_url; ?>/gallery/">
                             <?php if ($gallery_bg): ?>
                                 <img src="<?php echo esc_url($gallery_bg); ?>" alt="<?php echo esc_html($gallery_heading); ?>"
@@ -215,9 +201,7 @@ get_header(); ?>
                                 <?php endif; ?>
                             </div>
                         </a>
-
                     <?php endwhile; ?>
-
                 </div>
             <?php endif; ?>
             <a href="<?php echo $redirect_url; ?>/gallery/" class="bg-blue-line h-56 fs-14">View Full Gallery <svg
@@ -272,7 +256,6 @@ get_header(); ?>
                                 $btn_classes = 'accordion-button' . ($is_first ? '' : ' collapsed');
                                 $collapse_cls = 'accordion-collapse collapse' . ($is_first ? ' show' : '');
                                 ?>
-
                                 <div class="accordion-item">
                                     <h3 class="accordion-header" id="<?php echo esc_attr($heading_id); ?>">
                                         <button class="<?php echo esc_attr($btn_classes); ?> fs-16" type="button"
@@ -294,13 +277,11 @@ get_header(); ?>
                                         </div>
                                     </div>
                                 </div>
-
                             <?php endwhile; ?>
                         </div>
                         <?php
                     endif;
                     ?>
-
                 </div>
             </div>
         </div>
@@ -330,7 +311,8 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</section><section id="contact" class="contact bg-graylight">
+</section>
+<section id="contact" class="contact bg-graylight">
     <div class="container-fluid">
         <div class="wrapper">
             <div class="d-flex">
@@ -401,7 +383,8 @@ get_header(); ?>
                 </div>
                 <div class="form-container">
                     <h3>Request Your Free Quote</h3>
-                    <p class="mb-24 text-muted-foreground fs-16">Tell us about your project and we'll get back to you within 30 minutes.</p>
+                    <p class="mb-24 text-muted-foreground fs-16">Tell us about your project and we'll get back to you
+                        within 30 minutes.</p>
                     <?php
                     echo do_shortcode('[contact-form-7 id="b62d7ab" title="Main Contact Form"]');
                     ?>

@@ -21,7 +21,6 @@ get_header(); ?>
 </section>
 <?php while (have_posts()):
     the_post(); ?>
-
     <?php
     $rows = get_field('gallery_card');
     $types = [];
@@ -93,7 +92,6 @@ get_header(); ?>
         </div>
     </section>
 <?php endwhile; ?>
-
 <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content gallery-modal-content">
@@ -107,8 +105,6 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
-
 <section class="cta_group">
     <div class="container-fluid">
         <div class="wrapper">
@@ -231,5 +227,4 @@ get_header(); ?>
 
     })();
 </script>
-
 <?php get_footer(); ?>
