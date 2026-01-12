@@ -1,0 +1,61 @@
+.accordion {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    background-color: hsl(var(--card));
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid hsl(var(--foreground)) !important;
+
+    &:hover,
+    &:has(.accordion-button:not(.collapsed)) {
+        border: 1px solid hsl(var(--cta) / .5) !important;
+    }
+}
+
+button.accordion-button {
+    color: hsl(var(--card-foreground)) !important;
+    padding: 20px 24px;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid hsl(var(--border)) !important;
+    background: #fff !important;
+    font-weight: 600;
+    border: 0 !important;
+
+    &:hover {
+        color: hsl(var(--cta)) !important;
+    }
+
+    &::after {
+        background-size: 16px !important;
+        color: rgb(31, 59, 97);
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    &:not(.collapsed)::after {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='rgb(244, 121, 72)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+}
+
+.accordion-body {
+    padding: 0 24px 20px;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    p,
+    a {
+        font-size: 14px;
+        color: hsl(var(--foreground));
+    }
+
+    a {
+        color: hsl(var(--cta));
+        text-decoration: none;
+    }
+}

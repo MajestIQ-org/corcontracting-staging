@@ -1,0 +1,40 @@
+section.cta_group {
+    background-color: hsl(var(--cta));
+
+    .wrapper {
+        >.d-flex {
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+
+    .cta {
+        gap: 16px;
+
+        &hover a.bg-trans {
+            color: transparent !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 1199px) {
+        text-align: center;
+
+        & .wrapper {
+            >.d-flex {
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .cta {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

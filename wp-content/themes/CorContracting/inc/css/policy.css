@@ -1,0 +1,25 @@
+section.global-banner p {
+    color: hsl(var(--primary-foreground) / .8);
+}
+
+section.global-banner h1 {
+    color: hsl(var(--primary-foreground));
+}
+
+.content {
+    max-width: 768px;
+    margin: auto;
+
+    p strong {
+        color: hsl(var(--foreground));
+    }
+
+    p:not(:has(.strong)) {
+
+        color: hsl(var(--muted-foreground));
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}

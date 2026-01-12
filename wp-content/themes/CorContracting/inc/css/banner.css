@@ -1,0 +1,15 @@
+section.global-banner {
+    background-color: hsl(var(--primary));
+
+    .header_content {
+        max-width: 768px;
+    }
+
+    p.mb-0 {
+        color: hsl(var(--primary-foreground) / .8);
+    }
+
+    @media (min-width: 1200px) {
+        padding: 96px 0;
+    }
+}

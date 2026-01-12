@@ -1,0 +1,206 @@
+header {
+
+    background-color: hsl(var(--primary) / .95);
+    border-bottom: 1px solid hsl(var(--primary-foreground) / .1);
+
+    .navbar-brand {
+        display: flex;
+        max-width: 242px;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+
+        img {
+            max-width: 72px;
+        }
+
+        .logo_name {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: hsl(var(--primary-foreground));
+            }
+
+        }
+    }
+
+    #menu-corcontracting-main-menu {
+
+        @media (min-width: 1200px) {
+            width: 100%;
+            max-width: 570px;
+            gap: 24px;
+            justify-content: space-between;
+
+            ul.sub-menu {
+                display: none;
+                position: absolute;
+                transform: translate(0px, 8px);
+                margin: 0;
+
+                li:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        >li {
+            padding: 8px 0;
+        }
+
+        li#menu-item-95 a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            svg {
+                width: 16px;
+            }
+        }
+
+        li {
+            ul.sub-menu {
+                list-style: none;
+                padding: 8px 0;
+                background: #1E3A5F;
+                border-radius: 8px;
+                box-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+
+                li a {
+                    padding: 8px 16px;
+                    width: 100%;
+                    display: flex;
+                }
+
+
+            }
+
+            &:hover ul.sub-menu {
+                display: block;
+            }
+
+            a {
+                color: hsl(var(--primary-foreground) / .8);
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+
+        }
+
+        &.menu-item-has-children>a,
+        .current-menu-item a,
+        li:hover>a {
+            color: hsl(var(--primary-foreground));
+            font-weight: 500;
+        }
+    }
+
+    .contact-details {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .phone {
+            display: flex;
+            align-items: center;
+            color: hsl(var(--primary-foreground));
+            gap: 8px;
+            text-decoration: none;
+            font-weight: 600;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        a.bg-cta {
+            padding: 8px 16px !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        nav.navbar {
+            height: 80px;
+            justify-content: space-between;
+        }
+
+        div#navbarSupportedContent {
+            max-width: fit-content;
+        }
+
+        .navbar-brand {
+            .logo-header {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            img {
+                padding: 0 12px;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        padding: 20px 22px;
+
+        #navbarSupportedContent {
+            order: 3;
+        }
+
+        .navbar-brand {
+            .logo-header {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .small-text {
+                font-size: 12px;
+            }
+
+            img {
+                max-width: 49px;
+                object-fit: cover;
+            }
+        }
+
+        #menu-corcontracting-main-menu {
+            margin-top: 20px;
+        }
+
+        ul.sub-menu {
+            margin: 10px 0 0px;
+        }
+
+        button.navbar-toggler {
+            border: solid 1px #fff;
+            outline: none !important;
+            box-shadow: none !important;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {}
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        padding: 20px 8px;
+
+        .contact-details a {
+            display: none !important;
+        }
+    }
+}

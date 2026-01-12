@@ -1,0 +1,27 @@
+section.faq .faq_container {
+    max-width: 768px;
+    margin: auto;
+
+    .faq_group:not(:last-of-type) {
+        margin-bottom: 40px !important;
+    }
+}
+
+section.cta_group {
+    background-color: hsl(var(--primary));
+
+    .content {
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 80px 0;
+    }
+
+    .note,
+    .note a {
+        color: hsl(var(--primary-foreground) / .6);
+    }
+}
