@@ -86,7 +86,8 @@ p {
 .bg-blue-line,
 .bg-primary,
 .bg-primary-foreground,
-.bg-white-light {
+.bg-white-light,
+.bg-blue {
     border-radius: 6px;
     padding: 16px 32px;
     text-decoration: none;
@@ -174,6 +175,15 @@ p {
     }
 }
 
+.bg-blue {
+
+    background-color: hsl(var(--primary));
+
+    &:hover {
+        background-color: hsl(var(--primary) / .9);
+    }
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -190,8 +200,16 @@ p {
     font-size: 20px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
 .h-40 {
     height: 40px;
+}
+
+.h-44 {
+    height: 44px;
 }
 
 .h-48 {
@@ -201,6 +219,11 @@ p {
 .h-56 {
     height: 56px;
 }
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
 
 .mb-12 {
     margin-bottom: 12px;
@@ -236,6 +259,10 @@ p {
 
 .bg-graylight {
     background-color: hsl(var(--secondary));
+}
+
+.font-semibold {
+    font-weight: 500;
 }
 
 @media (min-width: 1200px) {
@@ -334,6 +361,11 @@ p {
 }
 
 @media (max-width: 575px) {
+
+    h1,
+    .h1 {
+        font-size: 35px;
+    }
 
     .looking-something .d-flex,
     .cta_group {

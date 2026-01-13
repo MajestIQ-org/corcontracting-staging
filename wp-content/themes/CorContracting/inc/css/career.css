@@ -1,0 +1,93 @@
+section.company-career {
+
+    .d-grid {
+        gap: 16px;
+    }
+
+    .header_content p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .benefits-container {
+        .benefits-icon {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: hsl(var(--gold));
+        }
+    }
+
+    .company-details {
+
+        .project-card {
+            background-color: hsl(var(--muted));
+            padding: 24px;
+            border-radius: 8px;
+
+            svg {
+                width: 40px;
+                height: 40px;
+                color: hsl(var(--gold));
+            }
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .wrapper>.d-flex {
+            gap: 48px;
+            justify-content: space-between;
+
+            >div {
+                width: 100%;
+                max-width: 660px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .wrapper>.d-flex {
+            gap: 40px;
+            flex-direction: column;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .d-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .content .d-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .company-details .d-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+section.cta_group {
+    background-color: hsl(var(--muted));
+
+    .content {
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .bg-cta {
+        max-width: max-content;
+        margin: auto;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 80px 0;
+    }
+}

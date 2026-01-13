@@ -7,7 +7,8 @@
                 <h1 class="text-gold mb-32">404</h1>
                 <h2 class="text-foreground mb-16">Page Not Found</h2>
                 <p class="text-muted-foreground mb-32">Sorry, we couldn't find the page you're looking for. It may have
-                    been moved or no longer exists.</p>
+                    been
+                    moved or no longer exists.</p>
 
                 <div class="looking-something mb-32">
                     <p class="mb-16 fs-16 d-flex text-muted-foreground">
@@ -20,7 +21,8 @@
                     </p>
                     <p class="mb-0 text-muted-foreground fs-14"> Try visiting our <a class="text-gold"
                             href="<?php echo $redirect_url; ?>/services">Services
-                            page</a> or use the links below to find what you need.</p>
+                            page</a> or use the links below
+                        to find what you need.</p>
                 </div>
 
                 <div class="popular-pages mb-40">
@@ -95,6 +97,7 @@
 
                 <div class="contact-call">
                     <p class="text-muted-foreground fs-16 mb-2">Need help? Give us a call:</p>
+
                     <a href="tel:7323433709" aria-label="Call CorContracting" class="text-gold fs-20">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
