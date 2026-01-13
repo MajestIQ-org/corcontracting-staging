@@ -7,11 +7,9 @@ get_header(); ?>
                 <?php if ($sub = get_field('subheading')): ?>
                     <p class="fs-14 subheading text-gold mb-16"><?php echo esc_html($sub); ?></p>
                 <?php endif; ?>
-
                 <?php if ($heading = get_field('heading')): ?>
                     <h1 class=" text-white mb-16"><?php echo esc_html($heading); ?></h1>
                 <?php endif; ?>
-
                 <?php if ($content = get_field('content')): ?>
                     <p class="mb-0"><?php echo get_field('content'); ?></p>
                 <?php endif; ?>
@@ -24,10 +22,8 @@ get_header(); ?>
         <div class="wrapper">
             <div class="faq_container">
                 <?php if (have_rows('faq_container')): ?>
-
                     <?php while (have_rows('faq_container')):
                         the_row(); ?>
-
                         <?php
                         $faq_title = get_sub_field('faq_title');
                         $accordion_id = 'faqAccordion_' . wp_unique_id();
@@ -87,7 +83,6 @@ get_header(); ?>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
             </div>
         </div>
     </div>
@@ -119,7 +114,8 @@ get_header(); ?>
                     </a>
                 </div>
                 <p class="note mb-0 fs-14"><a href="<?php echo $redirect_url; ?>/reviews/">Read our reviews</a> to see
-                    what clients say about working with us.</p>
+                    what clients
+                    say about working with us.</p>
             </div>
         </div>
     </div>

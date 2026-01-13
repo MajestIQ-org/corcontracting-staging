@@ -29,7 +29,15 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
 <?php endif; ?>
 
-<?php if (is_page(91) || is_page(89) ): ?>
+<?php if (is_page(91) || is_page(89)): ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/policy.css">
+<?php endif; ?>
+<?php if (is_page(79)): ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/financing.css">
+<?php endif; ?>
+<?php if (is_page(85)): ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/career.css">
 <?php endif; ?>
