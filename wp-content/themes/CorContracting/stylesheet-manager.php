@@ -41,3 +41,8 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/career.css">
 <?php endif; ?>
+<?php if (is_page(81)): ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/section-cta.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/reviews.css">
+<?php endif; ?>
