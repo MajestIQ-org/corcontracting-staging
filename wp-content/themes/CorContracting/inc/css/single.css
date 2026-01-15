@@ -1,0 +1,222 @@
+section.banner {
+    background: linear-gradient(to top, rgb(31, 59, 97), rgba(31, 59, 97, 0.8), rgba(0, 0, 0, 0));
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+section.single {
+    background-color: hsl(var(--background));
+
+    .content-box {
+
+        h2,
+        h3,
+        p b,
+        p strong {
+            color: hsl(var(--foreground));
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 16px
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            color: hsl(var(--muted-foreground));
+        }
+
+        p:not(:last-of-type) {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding: 0 0 0 24px;
+        }
+    }
+
+    .breadcrumbs {
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+            color: hsl(var(--foreground));
+        }
+    }
+
+    .category-container {
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+
+        span {
+            text-transform: uppercase;
+            padding: 4px 12px;
+            background: hsl(var(--gold));
+            color: hsl(var(--primary-foreground));
+            z-index: 11;
+            border-radius: 4px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            height: 24px;
+        }
+
+        time {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .single-content {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .author {
+        border-radius: 8px;
+        background-color: hsl(var(--muted));
+        padding: 24px;
+        gap: 16px;
+        align-items: center;
+
+        .icon {
+
+            background-color: hsl(var(--primary));
+            border-radius: 9999px;
+            width: 64px;
+            height: 64px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: hsl(var(--foreground));
+            }
+        }
+    }
+
+    hr {
+        margin: 48px 0;
+        opacity: 1;
+        border-top: 1px solid hsl(var(--border));
+    }
+
+    .related-blog {
+        gap: 24px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .blog-card {
+            background-color: hsl(var(--card));
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid hsl(var(--border));
+            transition: .3s;
+            height: -webkit-fill-available;
+            padding: 16px;
+
+            &:hover {
+                box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+            }
+        }
+
+        p,
+        h3 {
+            font-weight: 600;
+        }
+
+        h3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+
+        }
+
+        .read-more {
+            transition: .3s;
+            gap: 8px;
+            align-items: center;
+            font-weight: 600;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+        }
+    }
+
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .related-blog {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 575px) {
+        .author .d-flex {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+    }
+}
+
+section.cta_group {
+    background-color: hsl(var(--primary));
+
+    .content {
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 80px 0;
+    }
+
+    .note,
+    .note a {
+        color: hsl(var(--primary-foreground) / .6);
+    }
+}

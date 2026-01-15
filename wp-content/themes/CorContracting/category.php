@@ -80,7 +80,7 @@
                 <!-- SIDEBAR -->
                 <div class="side-bar">
                     <div class="category-box mb-32">
-                        <h3>Categories</h3>
+                        <h3 class="mb-16 fs-16 text-foreground">Categories</h3>
                         <ul>
                             <li>
                                 <a href="<?php echo get_home_url(); ?>/blog/">
