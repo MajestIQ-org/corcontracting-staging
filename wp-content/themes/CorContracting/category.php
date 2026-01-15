@@ -1,3 +1,7 @@
+<?php get_header(); ?>
+
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/banner.css">
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/blog.css">
 <section class="global-banner">
     <div class="container-fluid">
         <div class="wrapper">
@@ -6,11 +10,9 @@
                 <h1 class="text-white mb-16">
                     <?php single_cat_title(); ?>
                 </h1>
-                <?php if (!empty($category->description)): ?>
-                    <p class="mb-0">
-                        <?php echo esc_html($category->description); ?>
-                    </p>
-                <?php endif; ?>
+                <p class="mb-0">
+                    Expert advice for your next home improvement project.
+                </p>
             </div>
         </div>
     </div>
@@ -77,15 +79,14 @@
 
                 <!-- SIDEBAR -->
                 <div class="side-bar">
-                    <div class="category-box">
+                    <div class="category-box mb-32">
                         <h3>Categories</h3>
                         <ul>
                             <li>
-                                <a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>">
-                                    All (<?php echo wp_count_posts()->publish; ?>)
+                                <a href="<?php echo get_home_url(); ?>/blog/">
+                                    All <span>(<?php echo wp_count_posts()->publish; ?>)</span>
                                 </a>
                             </li>
-
                             <?php
                             $categories = get_categories();
                             foreach ($categories as $cat):
@@ -93,18 +94,21 @@
                                 <li>
                                     <a href="<?php echo esc_url(get_category_link($cat->term_id)); ?>">
                                         <?php echo esc_html($cat->name); ?>
-                                        (<?php echo $cat->count; ?>)
+                                        <span>
+                                            (<?php echo $cat->count; ?>)
+                                        </span>
                                     </a>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="free-estimate">
-                        <h3 class="mb-16 fs-16 text-foreground">Get Your Free Estimate</h3>
-                        <p>Ready to start your remodeling project? Contact us for a free, no-obligation quote.</p>
-                        <div class="cta d-flex gap-3 justify-content-center flex-direction-column">
-                            <a href="#contact" class="bg-gold h-48 fs-14 ">Get Free Quote</a>
-                            <a href="tel:7323433709" class="bg-trans h-48 fs-14">
+                        <h3 class="mb-12 fs-20 text-white">Get Your Free Estimate</h3>
+                        <p class="fs-14 mb-24">Ready to start your remodeling project? Contact us for a free,
+                            no-obligation quote.</p>
+                        <div class="cta d-flex gap-3 justify-content-center flex-column">
+                            <a href="#contact" class="bg-gold h-44 fs-14 ">Get Free Quote</a>
+                            <a href="tel:7323433709" class="bg-trans h-44 fs-14">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-phone h-4 w-4">
@@ -125,8 +129,8 @@
         <div class="wrapper">
             <div class="content">
                 <div class="header_content mb-32 text-center">
-                    <h2 class="text-white mb-16 h3">Like What You See?</h2>
-                    <p class="mb-0 text-white">Let's discuss your project.</p>
+                    <h2 class="text-white mb-16 h3">Have a Project in Mind?</h2>
+                    <p class="mb-0 text-white">Let's discuss your remodeling ideas. Get a free estimate today.</p>
                 </div>
                 <div class="cta d-flex gap-3 justify-content-center">
                     <a href="#contact" class="bg-cta h-48 fs-14">Get Free Quote</a>
