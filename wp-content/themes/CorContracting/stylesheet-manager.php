@@ -46,3 +46,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/section-cta.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/reviews.css">
 <?php endif; ?>
+<?php if (is_page(13)): ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/about.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/inc/css/section-cta.css">
+<?php endif; ?>

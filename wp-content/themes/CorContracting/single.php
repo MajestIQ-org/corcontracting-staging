@@ -138,8 +138,8 @@
         <div class="wrapper">
             <div class="content">
                 <div class="header_content mb-32 text-center">
-                    <h2 class="text-white mb-16 h3">Have a Project in Mind?</h2>
-                    <p class="mb-0 text-white">Let's discuss your remodeling ideas. Get a free estimate today.</p>
+                    <h2 class="text-white mb-16 h3">Ready to Start Your Project?</h2>
+                    <p class="mb-0 text-white">Get a free estimate for your remodeling project today.</p>
                 </div>
                 <div class="cta d-flex gap-3 justify-content-center">
                     <a href="#contact" class="bg-cta h-48 fs-14">Get Free Quote</a>

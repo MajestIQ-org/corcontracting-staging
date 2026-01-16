@@ -1,16 +1,11 @@
 <?php /*Template Name: Homepage */
 get_header(); ?>
-<section class="d-none">
-    <div class="container-fluid">
-        <div class="wrapper"></div>
-    </div>
-</section>
 <section class="banner">
     <div class="container-fluid">
         <div class="wrapper">
             <div class="banner_content d-flex">
                 <div class="content">
-                    <p class="subheading mb-20"><?php echo get_field('banner_sub-heading'); ?></p>
+                    <p class="subheading mb-20 "><?php echo get_field('banner_sub-heading'); ?></p>
                     <h1 class="mb-12 text-white"><?php echo get_field('banner_heading'); ?></h1>
                     <p class="h3 mb-32 text-cta"><?php echo get_field('banner_quote_text'); ?></p>
                     <p class="fs-18 mb-40 text-white"><?php echo get_field('banner_content'); ?></p>

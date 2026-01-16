@@ -156,6 +156,7 @@ p {
 
 .bg-white-light {
     background: #fff;
+    color:  hsl(var(--cta));
 
     &:hover {
         background-color: #ffffffe6;
