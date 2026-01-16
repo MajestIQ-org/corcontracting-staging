@@ -116,7 +116,7 @@ get_header(); ?>
                     <p class="mb-0 text-white">Let's discuss your project.</p>
                 </div>
                 <div class="cta d-flex gap-3 justify-content-center">
-                    <a href="#contact" class="bg-cta h-48 fs-14">Get Free Quote</a>
+                    <a href="#contact" class="bg-white-light h-48 fs-14">Get Free Quote</a>
                     <a href="tel:7323433709" class="bg-trans h-48 fs-14">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

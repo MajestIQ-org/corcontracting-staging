@@ -1,0 +1,195 @@
+@media (min-width: 1200px) {
+    section {
+        padding: 80px 0;
+    }
+}
+
+section.banner {
+    background-color: hsl(var(--primary));
+
+    .banner_content {
+        gap: 48px;
+
+        &>div {
+            width: 100%;
+        }
+
+        img {
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+
+section.history {
+
+    .history_content {
+        max-width: 896px;
+        margin: auto;
+
+        p {
+            font-size: 16px;
+            color: hsl(var(--muted-foreground));
+
+            b,
+            strong {
+                color: hsl(var(--foreground));
+            }
+        }
+
+        img {
+            border-radius: 12px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .history_content {
+            align-items: flex-start;
+            gap: 48px;
+
+            &>div {
+                width: 100%;
+            }
+
+            .content {
+                max-width: 524px;
+            }
+
+            .image {
+                max-width: 339px;
+            }
+
+            img {
+                height: 100%;
+                min-height: 430px;
+                object-fit: cover;
+            }
+
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .history_content {
+            gap: 40px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media (min-width: 768px) {}
+
+    @media (max-width: 767px) {}
+
+    @media (max-width: 575px) {}
+}
+
+section.how-it-works {
+    background-color: hsl(var(--muted));
+
+    .step-container {
+        max-width: 1024px;
+        margin: auto;
+
+        .d-flex {
+            gap: 16px;
+            position: relative;
+
+            .project-card p.text-gold {
+                color: hsl(var(--gold));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 999px;
+            }
+
+            .icon {
+                background-color: hsl(var(--primary) / .1);
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 999px;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .step-container .d-flex::before {
+            position: absolute;
+            content: '';
+            width: 85%;
+            height: 2px;
+            background: hsl(var(--gold) / .3);
+            top: 39px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 0;
+        }
+
+        .project-card {
+            text-align: center;
+        }
+
+        .project-card p.text-gold {
+            height: 80px;
+            width: 80px;
+            margin: auto auto 16px;
+            border: 4px solid;
+            background: white;
+            position: relative;
+        }
+
+        .icon {
+            background-color: hsl(var(--primary) / .1);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            margin: auto auto 12px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .step-container .d-flex {
+            flex-direction: column;
+        }
+
+        .project-card {
+            border: 2px solid hsl(var(--border));
+            padding: 24px;
+            border-radius: 8px;
+            background: #fff;
+
+            p.text-gold {
+                height: 56px;
+                width: 56px;
+                background-color: hsl(var(--gold) / .1);
+                border: 2px solid;
+                aspect-ratio: 1;
+            }
+        }
+
+        .d-flex-layout {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+
+            h3 {
+                margin: 0 !important;
+            }
+        }
+    }
+
+}
